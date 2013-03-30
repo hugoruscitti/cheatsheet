@@ -8,34 +8,44 @@
           "accordions": [
             {
               "accordion-id": "<%= _.uniqueId('accordion') %>",
-              "wiki-href": "#",
-              "accordion-title": "Variables",
+              "wiki-href": "https://pilas.readthedocs.org/es/latest/referencia.html#modulo-pilas",
+              "accordion-title": "Principales",
               "accordion-groups": [
                 {
-                  "topic-name": "Basic",
-                  "topic-summary": "This is a summary",
+                  "topic-name": "iniciar",
+                  "topic-summary": "pilas.iniciar(ancho=640, alto=480, titulo='Pilas', usar_motor='qtgl', rendimiento=60, modo='detectar', gravedad=(0, -90), pantalla_completa=False, permitir_depuracion=True, audio='phonon', centrado=True)",
                   "topic-href": "<%= _.uniqueId('toggle') %>",
                   "label": false,
                   "label-modifier": "",
                   "examples": [
                     {
-                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                      "code-example": "src/content/example-json.md",
-                      "compiled-result": "src/content/compiled-result.md"
+                      "code-description": "Inicia la ventana principal del juego con algunos detalles de funcionamiento.",
+                      "compiled-result": "src/content/iniciar.md"
                     }
                   ]
                 },
                 {
-                  "topic-name": "Variable Names",
-                  "topic-summary": "This is a summary",
+                  "topic-name": "avisar",
+                  "topic-summary": "pilas.avisar(mensaje, retraso=5)",
                   "topic-href": "<%= _.uniqueId('toggle') %>",
                   "label": false,
                   "label-modifier": "",
                   "examples": [
                     {
-                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                      "code-example": "src/content/example-json.md",
-                      "compiled-result": "src/content/compiled-result.md"
+                      "code-description": "Emite un mensaje en la ventana principal. Este mensaje aparecerá en la parte inferior de la pantalla durante 5 segundo.",
+                      "code-example": "pilas.avisar('Use la tecla <esc> para terminar el programa')"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "ver",
+                  "topic-summary": "pilas.ver(objeto, imprimir=True, retornar=False)",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Imprime en pantalla el codigo fuente asociado a un objeto."
                     }
                   ]
                 }

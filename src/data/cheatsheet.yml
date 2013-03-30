@@ -6,7 +6,7 @@ grid-rows:
     accordion:
     - accordion-id: accordion1
       wiki-href: '#'
-      accordion-title: Accordion
+      accordion-title: Accordion ASDASDASD
       accordion-groups:
       - accordion-section: Section Title
       - topic-name: Group

@@ -2,6 +2,32 @@ body {
   background: #333;
   padding-top: 50px;
 }
+.navbar-inverse {
+  background-color: white;
+}
+.navbar {
+  padding: 0;
+  box-shadow: 0px 0px 15px #07193D;
+}
+@media (max-width: 979px) {
+  html body {
+    padding-top: 80px;
+  }
+}
+body {
+  padding-top: 80px;
+}
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a:focus {
+  color: blue;
+  background-color: rgba(0, 0, 0, 0);
+}
+a.navbar-brand {
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  margin-left: -15px;
+}
 @media (max-width: 979px) {
   body {
     padding-top: 0;

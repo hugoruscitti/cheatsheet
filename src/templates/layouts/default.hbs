@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang=es>
   <head>
     <title> {{ page.title }} &middot; A Toolkit Component</title>
     <!-- this is a Toolkit component. Learn more at http://github.com/assemble/toolkit -->
     <!-- webfonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     <!-- stylesheets -->
+    <meta charset='utf-8'> 
     <link rel="stylesheet" href="{{assets}}/css/bootstrap.css">
     {{#if page.stylesheet}}<link rel="stylesheet" href="{{assets}}/css/{{ page.stylesheet }}">{{/if}}
     {{#if config.prettify}}<link rel="stylesheet" href="{{assets}}/js/prettify/prettify.css">{{/if}}
@@ -17,7 +18,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">{{#if page.brand}}{{ page.brand }}{{else}}{{ config.brand }}{{/if}}</a>
+          <a class="navbar-brand" href="/"><img src='pilas-logo.png'></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               {{#page.left-links}}
